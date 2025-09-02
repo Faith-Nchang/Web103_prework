@@ -1,0 +1,56 @@
+.creator-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;  /* align top of image & text */
+  justify-content: flex-start; /* keep items side by side */
+  gap: 20px; /* space between image and details */
+  flex-wrap: wrap;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; /* don't use "left", it's invalid */
+  text-align: left;
+  max-width: 600px;
+}
+
+.creator-details img {
+  width: 330px;  /* fixed width works better than % here */
+  height: 330px;  /* keep aspect ratio */
+  border-radius: 8px;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+
+p {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px 30px;
+   
+}
+
+.button:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
